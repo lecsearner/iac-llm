@@ -1,0 +1,20 @@
+# Never commit the real key or local junk
+.env
+**/.env
+.venv/
+out/
+out-*/
+matrix-out/
+demo/generated/
+demo/applied/
+__pycache__/
+*.pyc
+.terraform/
+.terraform.lock.hcl
+.tf-plugin-cache/
+# Terraform state + real tfvars (hold secrets / account specifics)
+*.tfstate
+*.tfstate.*
+**/terraform.tfvars
+**/databricks.tfvars
+models.txt
